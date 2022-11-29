@@ -1,0 +1,10 @@
+# GIT IGNORE FOR THIS PROJECT
+
+# IDEA
+.idea
+
+# VIRTUAL ENVIRONMENT
+.venv
+
+# MY COPY 'N PASTE
+copy_paste.txt

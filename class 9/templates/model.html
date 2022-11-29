@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Model</title>
+</head>
+<body>
+{# Commentary that doesn't print in screen #}
+<h1>modelo</h1>
+<br>
+<p> Fix values: 1 + 3:</p>
+{# Note that you set directly the numbers in this scrit #}
+<p>
+    {{ 1 + 3 }}
+</p>
+<br>
+<p>Variable values: 20 + 10</p>
+{# Now, see that variables "x" and "y" are now been recieved from route code #}
+<p> {{ x + y }} </p>
+<br>
+<p>Declaration here to print something using IF condition: If variable "x" is greater than 15</p>
+{% if x > 10 %}
+    <p>"X" is greater than 10 </p>
+{% endif %}
+<br>
+<hr>
+<p>Now, let's see how to print list using FOR: (list of fruits)</p>
+<table>
+    {% for fruit in fruits %}
+    <tr>
+        <td>{{ fruit }}</td>
+    </tr>
+    {% endfor %}
+</table>
+<br>
+<hr>
+<p> Lastly, lets use GET method and FOR to print a dictionary. <b>Add in URL "?apple=3&melon=2&strawbery=5&orange=4"</b></p>
+<table>
+    {% for key, value in query.items() %}
+    <tr>
+        <th>{{ key }}</th>
+        <td>{{ value }}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+
+</body>
+</html>

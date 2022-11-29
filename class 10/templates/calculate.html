@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculate</title>
+</head>
+<body>
+    <table>
+    {% for k, v in notes.items() %}
+        <tr>
+            <th>{{ k }}</th>
+            <td>{{ v }}</td>
+        </tr>
+    {% endfor %}
+    </table>
+    {% if notes["average"] > 7 %}
+    <p><b>APPROVED</b></p>
+    {% elif notes["average"] > 5 %}
+    <p><b>RETRY</b></p>
+    {% elif notes["average"] > 0 %}
+    <p><b>REPPROVED</b></p>
+    {% endif %}
+</body>
+</html>
