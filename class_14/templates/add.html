@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+</head>
+<body>
+<h1 style="text-align: center;">Add new Student</h1>
+<form action="/add" class="container" method="post">
+    <div class="row">
+        <div class="col-md-6">
+            <input type="text" name="name" id="name" placeholder="name" class="form-control" required>
+        </div>
+        <div class="col-md-6">
+            <input type="text" name="age" id="age" placeholder="age" class="form-control" required>
+        </div>
+    </div>
+    <br>
+    <div class="row col-xs-12">
+        <button onclick="myFunction()" class="btn btn-block btn-success">Submit</button>
+    </div>
+        <script>
+    function myFunction() {
+        confirm("Confirm Student?");
+    }
+    </script>
+</form>
+<form action="/" class="container" method="get">
+    <div style="text-align: center" class="row col-xs-12">
+        <button type="submit" class="btn btn-block btn-cancel">Cancel</button>
+    </div>
+</form>
+</body>
+</html>

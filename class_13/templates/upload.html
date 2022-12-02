@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>File upload</title>
+</head>
+<body>
+<h1>Upload was successful</h1>
+<hr>
+<img src="{{url_for('static', filename=file_name)}}" alt="{{file_name}}" height="750">
+<br>
+<a href="/get_file/{{file_name}}">Click to zoom in</a>
+</body>
+</html>

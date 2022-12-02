@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Upload file</title>
+</head>
+<body>
+{# DON'T FORGET TO USE ENCRIP "multipart/form-data" TO AVOID PROBLEMS #}
+<form action="/upload" enctype="multipart/form-data" method="post">
+    <p>
+        <input type="file" name="image" id="image">
+    </p>
+    <p>
+        <button type="submit">Submit</button>
+    </p>
+
+</form>
+</body>
+</html>

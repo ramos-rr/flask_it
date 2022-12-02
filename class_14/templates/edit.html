@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Student</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+</head>
+<body>
+<h1 style="text-align: center">Edit {{ name }}</h1>
+<form action="/edit/student_{{ id }}" class="container" method="post">
+    <div class="row">
+        <div class="col-md-6">
+            <label>Name: {{ name }}</label>
+            <br>
+            <input type="text" name="name" id="name" placeholder="edit name">
+            <br>
+            <br>
+            <label>Age: {{ age }}</label>
+            <br>
+            <input type="text" name="age" id="age" placeholder="edit age">
+        </div>
+    </div>
+    <br>
+    <div class="row col-xs-12">
+        <button onclick="myFunction()" class="btn btn-block btn-success">Submit changes</button>
+    </div>
+    <script>
+    function myFunction() {
+        confirm("Confirm changes?");
+    }
+    </script>
+</form>
+<form action="/" class="container" method="get">
+    <div class="row col-xs-12">
+        <button type="submit" class="btn btn-block btn-cancel">Cancel</button>
+    </div>
+</form>
+</body>
+</html>

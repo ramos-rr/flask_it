@@ -8,3 +8,6 @@
 
 # MY COPY 'N PASTE
 copy_paste.txt
+
+# DATABASE
+*.db

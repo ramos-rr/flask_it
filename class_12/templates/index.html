@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Session</title>
+</head>
+<body>
+{% if username != '' %}
+    <p>Username loged: {{ username }}</p>
+    <p>Want to end session, click <a href="/logout">here</a></p>
+{% else %}
+    <p>You are not loged</p>
+    <p>Click <a href="/login">here</a> to got to login page</p>
+{% endif %}
+</body>
+</html>

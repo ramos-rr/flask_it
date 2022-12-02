@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <title>Delete Student</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+</head>
+<body>
+<h1 style="text-align: center;">Delete Student</h1>
+<form action="/delete/student_{{ id }}" class="container" method="post">
+    <div class="row">
+    <table>
+        <tr><td><label>Student:  {{ name }}</label></td></tr>
+        <tr><td><label>Age:  {{ age }}</label></td></tr>
+    </table>
+    </div>
+    <br>
+    <div class="row">
+        <button onclick="myFunction()" class="btn btn-block btn-danger">Delete student</button>
+    </div>
+        <script>
+    function myFunction() {
+        confirm("DELETE Student?");
+    }
+    </script>
+</form>
+<form action="/" class="container" method="get">
+    <div style="text-align: center" class="row">
+        <button type="submit" class="btn btn-block">Cancel</button>
+    </div>
+</form>
+
+</body>
+</html>
